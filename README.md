@@ -16,4 +16,4 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://sotodo.netlify.app).
+[see](https://sotodo.netlify.app).
