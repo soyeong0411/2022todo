@@ -1,6 +1,6 @@
 <template>
-  <div class="hea">
-    <h1>Todo List</h1>
+  <div class="header">
+    <h1>ToDoList</h1>
   </div>
   <TodoInput @addTodo="addTodoItem"></TodoInput>
   <Todolist :todoItem="todoItem" @reDel="removeDel"></Todolist>
@@ -42,6 +42,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url(./assets/style.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
+
+body{font-family: 'IBM Plex Sans KR', sans-serif;}
+
+#app{
+  width: 400px;
+  margin: 0 auto;
+  background-image: url(../public/images/bg.jpg);
+  padding: 30px;
+  .header{
+    text-align: center;
+    color:rgb(61, 46, 29);
+    font-size: 22px;
+  }
+}
 
 </style>

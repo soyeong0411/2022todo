@@ -1,8 +1,9 @@
 <template>
   <div class="dataInput">
     <input type="text" class="inp" placeholder="할일을 입력하세요." v-model="newTodoItem">
+    <div class="btn" @click="todoItem">입력</div>
   </div>
-  <div class="btn" @click="todoItem">입력</div>
+  
   {{newTodoItem}}
 
 
@@ -44,7 +45,26 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+.dataInput{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    .inp{
+        flex:1 0 auto;
+        height: 38px;
+        border-radius: 10px;
+        border: 2px solid rgb(93, 50, 8);
+        text-indent: 10px;
+        background: rgb(235, 225, 211);
+        font-size: 17px;
+        &:focus{
+           outline: none;
+        }
+    }
+}
+
 
 .mView-enter-from{opacity: 0;transform: translate(-50%,100%);}
 .mView-enter-active{transition:0.3s;}

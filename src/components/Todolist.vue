@@ -5,7 +5,8 @@
             <i class="fa-regular fa-square-check"></i>{{item}}
         </div>
         
-        <div class="del" @click="removeDel(i,item)" >
+        <div class="del" @click="removeDel(i,item)" >  <!-- array, local 에서 삭제 -->
+            
             <i class="fa-solid fa-eraser"></i>
         </div>
 
