@@ -1,6 +1,8 @@
 <template>
-  <div class="header">
-    <h1>ToDoList</h1>
+  <div class="headerWrap">
+    <div class="header">
+      <h1>ToDoList</h1>
+    </div>
   </div>
   <TodoInput @addTodo="addTodoItem"></TodoInput>
   <Todolist :todoItem="todoItem" @reDel="removeDel"></Todolist>
@@ -65,6 +67,7 @@ body{font-family: 'IBM Plex Sans KR', sans-serif;
   padding: 30px 40px;
   margin-top: 100px;
   border-radius: 20px;
+
   .header{
     text-align: center;
     color:rgb(61, 46, 29);

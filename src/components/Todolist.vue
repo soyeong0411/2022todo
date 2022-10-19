@@ -1,16 +1,16 @@
 <template>
-  <div class="listWrap">
-      <ul>
-        <li v-for="(item,i) in todoItem" :key="i" class="itemList">
-            <div class="list">
-                <img src="../assets/pin.png" alt="">{{item}}
-            </div>
-            <div class="del" @click="removeDel(i,item)" >  <!-- array, local 에서 삭제 -->
-                <img src="../assets/del.png" alt="">
-            </div>
-        </li>
-      </ul>
-  </div>
+      <div class="listWrap">
+          <ul>
+            <li v-for="(item,i) in todoItem" :key="i" class="itemList">
+                <div class="list">
+                    <img src="../assets/pin.png" alt="">{{item}}
+                </div>
+                <div class="del" @click="removeDel(i,item)" >  <!-- array, local 에서 삭제 -->
+                    <img src="../assets/del.png" alt="">
+                </div>
+            </li>
+          </ul>
+      </div>
 </template>
 
 <script>
@@ -27,14 +27,19 @@ export default {
 </script>
 
 <style lang="scss">
-
-.itemList{
+.listWrap{
+    width: 345px;
+    min-height: 200px;
+    background: rgb(235, 225, 211);
+    border-radius: 10px;margin-top: 20px;
+    .itemList{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 35px;
     margin: 7px 0;
     border-bottom: 1px dashed rgb(93, 50, 8);
+    padding: 0 7px;
     .list{
         display: flex;
         align-items: center;
@@ -56,6 +61,8 @@ export default {
     }
     }
 }
+}
+
     
 
 
