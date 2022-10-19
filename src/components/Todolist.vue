@@ -1,20 +1,16 @@
 <template>
-  <ul>
-    <li v-for="(item,i) in todoItem" :key="i" class="itemList">
-        <div class="list">
-            <i class="fa-regular fa-square-check"></i>{{item}}
-        </div>
-        
-        <div class="del" @click="removeDel(i,item)" >  <!-- array, local 에서 삭제 -->
-            
-            <i class="fa-solid fa-eraser"></i>
-        </div>
-
-    </li>
-
-        
-    
-  </ul>
+  <div class="listWrap">
+      <ul>
+        <li v-for="(item,i) in todoItem" :key="i" class="itemList">
+            <div class="list">
+                <img src="../assets/pin.png" alt="">{{item}}
+            </div>
+            <div class="del" @click="removeDel(i,item)" >  <!-- array, local 에서 삭제 -->
+                <img src="../assets/del.png" alt="">
+            </div>
+        </li>
+      </ul>
+  </div>
 </template>
 
 <script>
@@ -30,28 +26,39 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 .itemList{
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 35px;
-}
-.itemList li{
-    margin-bottom: 5px;
-}
-.list{
-    display: flex;
-    gap:10px;
-}
-.del{
-    background: skyblue;
-    padding: 0 20px;
+    margin: 7px 0;
+    border-bottom: 1px dashed rgb(93, 50, 8);
+    .list{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        img{
+        width: 20px;height: 20px;
+        }
+    }
+    .del{
+    // padding: 0 20px;
     cursor: pointer;
-    align-self: start;
-    height: 100%;
-    justify-content: center;
+    justify-content:right;
     align-items: center;
     display: flex;
+    // align-self: start;
+    // height: 100%;
+    img{
+        width: 25px;height: 24px;
+    }
+    }
 }
+    
+
+
+
 
 </style>

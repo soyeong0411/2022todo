@@ -49,10 +49,10 @@ export default {
 body{font-family: 'IBM Plex Sans KR', sans-serif;}
 
 #app{
-  width: 400px;
+  width: 420px;
   margin: 0 auto;
-  background-image: url(../public/images/bg.jpg);
-  padding: 30px;
+  background-image: url(./assets/bg.jpg);
+  padding: 30px 40px;
   .header{
     text-align: center;
     color:rgb(61, 46, 29);

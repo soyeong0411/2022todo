@@ -4,13 +4,10 @@
     <div class="btn" @click="todoItem">입력</div>
   </div>
   
-  {{newTodoItem}}
-
-
   <transition name="mView">
   <Modal v-if="modal" @click="modal=false">
     <template v-slot:header>경고</template>
-    <template v-slot:body>자료를 입력하세요.</template>
+    <template v-slot:body>할일을 입력하세요.</template>
   </Modal>
   </transition>
 </template>
@@ -49,7 +46,7 @@ export default {
 
 .dataInput{
     display: flex;
-    gap: 15px;
+    gap: 5px;
     margin-top: 15px;
     .inp{
         flex:1 0 auto;
@@ -62,6 +59,16 @@ export default {
         &:focus{
            outline: none;
         }
+    }
+    .btn{
+        width: 50px;height: 38px;
+        background: rgb(93, 50, 8);
+        border-radius: 10px;
+        color:rgb(235, 225, 211);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
 
