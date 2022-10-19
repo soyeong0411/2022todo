@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 .listWrap{
-    width: 345px;
+    width: 340px;
     min-height: 200px;
     background: rgb(235, 225, 211);
     border-radius: 10px;margin-top: 20px;
