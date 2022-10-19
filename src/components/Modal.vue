@@ -27,11 +27,11 @@ export default {
 <style lang="scss">
     .modal{
         width: 250px;
-        height: 100px;
+        height: 120px;
         background: rgb(235, 225, 211);
         position: fixed;
         left: 50%;
-        top: 10%;
+        top: 20%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;

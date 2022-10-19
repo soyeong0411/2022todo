@@ -46,13 +46,25 @@ export default {
 @import url(./assets/style.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
 
-body{font-family: 'IBM Plex Sans KR', sans-serif;}
+body{font-family: 'IBM Plex Sans KR', sans-serif;
+  // background-image: linear-gradient(
+  //   rgba(255,255,255,0.3),rgba(255,255,255,0.3)
+  // ),url(./assets/bg1.webp);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./assets/bg1.webp);
+  height: 100vh;
+
+}
 
 #app{
   width: 420px;
   margin: 0 auto;
   background-image: url(./assets/bg.jpg);
   padding: 30px 40px;
+  margin-top: 100px;
+  border-radius: 20px;
   .header{
     text-align: center;
     color:rgb(61, 46, 29);
